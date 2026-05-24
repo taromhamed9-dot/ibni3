@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>إبني - تسجيل طفلك</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;800&family=Tajawal:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body class="register-page">
+
+<!-- ═══════════════ NAVIGATION BAR ═══════════════ -->
+<nav class="navbar" id="navbar">
+  <div class="nav-container">
+    <a href="index.html" class="nav-logo">
+      <div class="logo-icon">
+        <svg width="36" height="36" viewBox="0 0 36 36" fill="none">
+          <path d="M18 3L3 15V33H13V23H23V33H33V15L18 3Z" fill="#3498DB" stroke="#2C3E50" stroke-width="1.5"/>
+          <polygon points="18,8 15,12 21,12" fill="#F39C12"/>
+        </svg>
+      </div>
+      <div class="logo-text">
+        <span class="logo-name">إبني</span>
+        <span class="logo-tagline">نبني عقولا، وتصنع مستقبلا</span>
+      </div>
+    </a>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="index.html">الرئيسية</a></li>
+      <li><a href="index.html#about">عن إبني</a></li>
+      <li><a href="index.html#games">العابنا</a></li>
+      <li><a href="index.html#school">المدرسة</a></li>
+      <li><a href="index.html#blog">المدونة التربوية</a></li>
+      <li><a href="index.html#apps">تطبيقاتنا</a></li>
+      <li><a href="index.html#contact">تواصل معنا</a></li>
+    </ul>
+    <a href="register.html" class="nav-cta active-cta">
+      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+      <span>سجل طفلك الآن</span>
+    </a>
+    <button class="hamburger" id="hamburger" aria-label="القائمة">
+      <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#2C3E50" stroke-width="2.5" stroke-linecap="round"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+    </button>
+  </div>
+</nav>
+
+<!-- ═══════════════ REGISTRATION SECTION ═══════════════ -->
+<section class="register-section">
+  <!-- Decorative characters -->
+  <img src="img/anas.png" alt="أنس" class="register-deco register-deco-right" loading="lazy">
+  <img src="img/jouri.png" alt="جوري" class="register-deco register-deco-left" loading="lazy">
+  <span class="register-star float-animation"></span>
+
+  <div class="container">
+    <h1 class="register-title">رحلة تسجيل طفلك في منصة <span class="text-blue">إبني</span></h1>
+    <p class="register-subtitle">خطوات بسيطة.. رحلة تعليمية مذهلة لطفلك</p>
+
+    <div class="register-grid" id="registerGrid">
+
+      <!-- ═══ STEP 1 ═══ -->
+      <div class="step-card active-step" data-step="1">
+        <span class="step-badge" style="background:#3B82F6">1</span>
+        <h3 class="step-title" style="color:#3B82F6">مرحبا بك في عالم إبني</h3>
+        <div class="step-illustration">
+          <img src="img/hero-characters.png" alt="أبطال إبني" loading="lazy" class="float-animation" style="width:200px">
+        </div>
+        <p class="step-paragraph">مرحبا بك في عائلة إبني! نحن متحمسون لمعرفة المزيد عن بطلنا الصغير لنصنع له رحلة تعليمية تشبهه تماماً</p>
+        <div class="step-nav">
+          <div></div>
+          <button class="btn-next" style="background:linear-gradient(135deg,#3B82F6,#8B5CF6)" data-next="2">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4.5 16.5c-1.5 1.38-2 2.5-2 3.5 0 2 2.5 2 4 0"/><circle cx="12" cy="8" r="5" fill="none"/><path d="M15 4.1c2.3.8 4 3 4 5.4"/></svg>
+            ابدأ الرحلة
+          </button>
+        </div>
+        <div class="progress-dots">
+          <span class="dot active-dot" style="background:#3B82F6"></span>
+          <span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="dot"></span>
+        </div>
+      </div>
+
+      <!-- ═══ STEP 2 ═══ -->
+      <div class="step-card" data-step="2">
+        <span class="step-badge" style="background:#22C55E">2</span>
+        <h3 class="step-title" style="color:#22C55E">تعرف على بطلنا</h3>
+        <div class="form-group">
+          <label>ما اسم بطلنا/بطلتنا الصغير؟</label>
+          <div class="input-wrap">
+            <svg class="input-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#95A5A6" stroke-width="2"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+            <input type="text" id="childName" placeholder="اكتب اسم الطفل" required>
+          </div>
+        </div>
+        <div class="form-group">
+          <label>كم شمعة أطفأ في كعكة ميلاده الأخيرة؟</label>
+          <span class="sub-label">(اختر عمر الطفل)</span>
+          <div class="age-picker" id="agePicker">
+            <button type="button" class="age-btn" data-age="5">5</button>
+            <button type="button" class="age-btn" data-age="6">6</button>
+            <button type="button" class="age-btn" data-age="7">7</button>
+            <button type="button" class="age-btn" data-age="8">8</button>
+            <button type="button" class="age-btn" data-age="9">9</button>
+            <button type="button" class="age-btn" data-age="10">10</button>
+          </div>
+        </div>
+        <div class="step-deco-bottom">
+          <img src="img/anas.png" alt="أنس" class="step-deco-char float-animation" loading="lazy" style="width:60px">
+          <img src="img/jouri.png" alt="جوري" class="step-deco-char float-animation" loading="lazy" style="width:60px;animation-delay:1s">
+        </div>
+        <div class="step-nav">
+          <button class="btn-prev" data-prev="1">السابق</button>
+          <button class="btn-next" style="background:#22C55E" data-next="3">التالي</button>
+        </div>
+        <div class="progress-dots">
+          <span class="dot done-dot"></span>
+          <span class="dot active-dot" style="background:#22C55E"></span>
+          <span class="dot"></span><span class="dot"></span><span class="dot"></span>
+        </div>
+      </div>
+
+      <!-- ═══ STEP 3 ═══ -->
+      <div class="step-card" data-step="3">
+        <span class="step-badge" style="background:#F97316">3</span>
+        <h3 class="step-title" style="color:#F97316">اهتمامات بطلنا</h3>
+        <p class="step-question">إذا تركت الخيارات لبطلنا كيف يفضل قضاء وقته؟</p>
+        <span class="sub-label">(اختر إجابة أو أكثر)</span>
+        <div class="selection-grid" id="interestsGrid">
+          <div class="selection-card" data-value="blocks">
+            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#F97316" stroke-width="2"><path d="M12 2l-2 7H3l6 4.5L7 21l5-3.5L17 21l-2-7.5L21 9h-7z"/><rect x="6" y="14" width="4" height="4" rx="1"/><rect x="14" y="14" width="4" height="4" rx="1"/></svg>
+            <span>تركيب المكعبات وبناء الأبراج</span>
+            <span class="check-badge"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="3"><polyline points="20,6 9,17 4,12"/></svg></span>
+          </div>
+          <div class="selection-card" data-value="drawing">
+            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#F97316" stroke-width="2"><path d="M12 19l7-7 3 3-7 7-3-3z"/><path d="M18 13l-1.5-7.5L2 2l3.5 14.5L13 18"/><path d="M2 2l7.586 7.586"/><circle cx="11" cy="11" r="2"/></svg>
+            <span>الرسم والتلوين واكتشاف الألوان</span>
+            <span class="check-badge"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="3"><polyline points="20,6 9,17 4,12"/></svg></span>
+          </div>
+          <div class="selection-card" data-value="games">
+            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#F97316" stroke-width="2"><rect x="2" y="6" width="20" height="12" rx="2"/><line x1="6" y1="12" x2="10" y2="12"/><line x1="8" y1="10" x2="8" y2="14"/><circle cx="15" cy="10" r="1" fill="#F97316"/><circle cx="18" cy="13" r="1" fill="#F97316"/></svg>
+            <span>اللعب بالألعاب الرقمية</span>
+            <span class="check-badge"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="3"><polyline points="20,6 9,17 4,12"/></svg></span>
+          </div>
+          <div class="selection-card" data-value="sports">
+            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#F97316" stroke-width="2"><circle cx="12" cy="5" r="2"/><path d="M4 17l4-5 3 3 5-7 4 4"/></svg>
+            <span>الحركة، الجري، الرياضة الحركية</span>
+            <span class="check-badge"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="3"><polyline points="20,6 9,17 4,12"/></svg></span>
+          </div>
+        </div>
+        <div class="step-nav">
+          <button class="btn-prev" data-prev="2">السابق</button>
+          <button class="btn-next" style="background:#F97316" data-next="4">التالي</button>
+        </div>
+        <div class="progress-dots">
+          <span class="dot done-dot"></span><span class="dot done-dot"></span>
+          <span class="dot active-dot" style="background:#F97316"></span>
+          <span class="dot"></span><span class="dot"></span>
+        </div>
+      </div>
+
+      <!-- ═══ STEP 4 ═══ -->
+      <div class="step-card" data-step="4">
+        <span class="step-badge" style="background:#8B5CF6">4</span>
+        <h3 class="step-title" style="color:#8B5CF6">القوة الخارقة التي نطمح لها</h3>
+        <p class="step-question">ولي أمر حريص، ما هي القوة الخارقة التي تطمع أن يطورها طفلك معنا في إبني؟</p>
+        <div class="selection-grid" id="superpowersGrid">
+          <div class="selection-card superpower-card" data-value="focus">
+            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#8B5CF6" stroke-width="2"><path d="M12 2a8 8 0 0 0-8 8c0 3.4 2 6.1 5 7.4V20h6v-2.6c3-1.3 5-4 5-7.4a8 8 0 0 0-8-8z"/><line x1="12" y1="20" x2="12" y2="22"/><line x1="9" y1="22" x2="15" y2="22"/></svg>
+            <span>التركيز القوي والذكاء المنطقي</span>
+            <span class="check-badge purple"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="3"><polyline points="20,6 9,17 4,12"/></svg></span>
+          </div>
+          <div class="selection-card superpower-card" data-value="social">
+            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#8B5CF6" stroke-width="2"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+            <span>المهارات الاجتماعية والعمل الجماعي</span>
+            <span class="check-badge purple"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="3"><polyline points="20,6 9,17 4,12"/></svg></span>
+          </div>
+          <div class="selection-card superpower-card" data-value="tech">
+            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#8B5CF6" stroke-width="2"><rect x="4" y="4" width="16" height="16" rx="2"/><rect x="9" y="9" width="6" height="6"/><line x1="9" y1="1" x2="9" y2="4"/><line x1="15" y1="1" x2="15" y2="4"/><line x1="9" y1="20" x2="9" y2="23"/><line x1="15" y1="20" x2="15" y2="23"/><line x1="20" y1="9" x2="23" y2="9"/><line x1="20" y1="14" x2="23" y2="14"/><line x1="1" y1="9" x2="4" y2="9"/><line x1="1" y1="14" x2="4" y2="14"/></svg>
+            <span>دمج التكنولوجيا بالتعلم الذكي</span>
+            <span class="check-badge purple"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="3"><polyline points="20,6 9,17 4,12"/></svg></span>
+          </div>
+          <div class="selection-card superpower-card" data-value="creativity">
+            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#8B5CF6" stroke-width="2"><path d="M4.5 16.5c-1.5 1.38-2 2.5-2 3.5 0 2 2.5 2 4 0 1.5-2 .5-3.5 0-4.5"/><path d="M12 2C6.5 2 2 6 2 10c0 1.5.5 2.8 1 4l9 8 9-8c.5-1.2 1-2.5 1-4 0-4-4.5-8-10-8z" fill="none"/><path d="M15 4.1c2.3.8 4 3 4 5.4"/></svg>
+            <span>الإبداع والإبتكار والخيال</span>
+            <span class="check-badge purple"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="3"><polyline points="20,6 9,17 4,12"/></svg></span>
+          </div>
+        </div>
+        <div class="step-nav">
+          <button class="btn-prev" data-prev="3">السابق</button>
+          <button class="btn-next" style="background:#8B5CF6" data-next="5">التالي</button>
+        </div>
+        <div class="progress-dots">
+          <span class="dot done-dot"></span><span class="dot done-dot"></span><span class="dot done-dot"></span>
+          <span class="dot active-dot" style="background:#8B5CF6"></span>
+          <span class="dot"></span>
+        </div>
+      </div>
+
+      <!-- ═══ STEP 5 ═══ -->
+      <div class="step-card" data-step="5">
+        <span class="step-badge" style="background:#3B82F6">5</span>
+        <h3 class="step-title" style="color:#3B82F6">وسيلة التواصل</h3>
+        <p class="step-subtitle-text">لنرسل لك كل جديد ومحتوى مميز لطفلك</p>
+        <div class="form-group">
+          <label>اسم ولي الأمر</label>
+          <div class="input-wrap">
+            <svg class="input-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#95A5A6" stroke-width="2"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+            <input type="text" id="regParentName" placeholder="اكتب اسمك الكامل" required>
+          </div>
+        </div>
+        <div class="form-group">
+          <label>رقم الهاتف</label>
+          <div class="input-wrap">
+            <svg class="input-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#95A5A6" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.81.32 1.6.57 2.37a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.77.25 1.56.44 2.37.57A2 2 0 0 1 22 16.92z"/></svg>
+            <input type="tel" id="regPhone" placeholder="07 XX XX XX XX" pattern="0[5-7][0-9]{8}" required>
+          </div>
+        </div>
+        <div class="form-group">
+          <label>الولاية</label>
+          <div class="input-wrap">
+            <svg class="input-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#95A5A6" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+            <select id="regWilaya" required>
+              <option value="">اختر الولاية</option>
+              <option value="01">01 - Adrar</option><option value="02">02 - Chlef</option><option value="03">03 - Laghouat</option><option value="04">04 - Oum El Bouaghi</option><option value="05">05 - Batna</option><option value="06">06 - Béjaïa</option><option value="07">07 - Biskra</option><option value="08">08 - Béchar</option><option value="09">09 - Blida</option><option value="10">10 - Bouira</option><option value="11">11 - Tamanrasset</option><option value="12">12 - Tébessa</option><option value="13">13 - Tlemcen</option><option value="14">14 - Tiaret</option><option value="15">15 - Tizi Ouzou</option><option value="16">16 - Algiers</option><option value="17">17 - Djelfa</option><option value="18">18 - Jijel</option><option value="19">19 - Sétif</option><option value="20">20 - Saïda</option><option value="21">21 - Skikda</option><option value="22">22 - Sidi Bel Abbès</option><option value="23">23 - Annaba</option><option value="24">24 - Guelma</option><option value="25">25 - Constantine</option><option value="26">26 - Médéa</option><option value="27">27 - Mostaganem</option><option value="28">28 - M'Sila</option><option value="29">29 - Mascara</option><option value="30">30 - Ouargla</option><option value="31">31 - Oran</option><option value="32">32 - El Bayadh</option><option value="33">33 - Illizi</option><option value="34">34 - Bordj Bou Arréridj</option><option value="35">35 - Boumerdès</option><option value="36">36 - El Tarf</option><option value="37">37 - Tindouf</option><option value="38">38 - Tissemsilt</option><option value="39">39 - El Oued</option><option value="40">40 - Khenchela</option><option value="41">41 - Souk Ahras</option><option value="42">42 - Tipaza</option><option value="43">43 - Mila</option><option value="44">44 - Aïn Defla</option><option value="45">45 - Naâma</option><option value="46">46 - Aïn Témouchent</option><option value="47">47 - Ghardaïa</option><option value="48">48 - Relizane</option><option value="49">49 - Timimoun</option><option value="50">50 - Bordj Badji Mokhtar</option><option value="51">51 - Ouled Djellal</option><option value="52">52 - Béni Abbès</option><option value="53">53 - In Salah</option><option value="54">54 - In Guezzam</option><option value="55">55 - Touggourt</option><option value="56">56 - Djanet</option><option value="57">57 - El M'Ghair</option><option value="58">58 - El Meniaa</option>
+            </select>
+          </div>
+        </div>
+        <div class="trust-note">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#22C55E" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><polyline points="9,12 11,14 15,10"/></svg>
+          <span>معلوماتك آمنة 100% ولا نشاركها مع أي جهة</span>
+        </div>
+        <div class="step-nav">
+          <button class="btn-prev" data-prev="4">السابق</button>
+          <button class="btn-next" style="background:#3B82F6" data-next="6">التالي</button>
+        </div>
+        <div class="progress-dots">
+          <span class="dot done-dot"></span><span class="dot done-dot"></span><span class="dot done-dot"></span><span class="dot done-dot"></span>
+          <span class="dot active-dot" style="background:#3B82F6"></span>
+        </div>
+      </div>
+
+      <!-- ═══ STEP 6 ═══ -->
+      <div class="step-card" data-step="6">
+        <span class="step-badge step-badge-star" style="background:#22C55E">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="white"><polygon points="12,2 15.09,8.26 22,9.27 17,14.14 18.18,21.02 12,17.77 5.82,21.02 7,14.14 2,9.27 8.91,8.26"/></svg>
+        </span>
+        <div class="confetti-container" id="confettiContainer"></div>
+        <div class="celebration-image">
+          <img src="img/hero-characters.png" alt="أبطال إبني يحتفلون" loading="lazy" style="width:220px">
+        </div>
+        <div class="success-check">
+          <svg width="50" height="50" viewBox="0 0 24 24" fill="none" stroke="#2ECC71" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="9,12 11,14 15,10"/></svg>
+        </div>
+        <h3 class="step-title success-title">تم بنجاح</h3>
+        <div class="success-box">
+          <p class="success-line1">تم تجهيز ملف البطل بنجاح</p>
+          <p class="success-line2">أرسلنا لك هدية ترحيبية عبر الواتساب تحتوي على نصائح وألعاب تعليمية مجانية.</p>
+        </div>
+        <a href="index.html" class="btn-home">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9,22 9,12 15,12 15,22"/></svg>
+          الذهاب للصفحة الرئيسية
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════ TRUST BAR ═══════════════ -->
+<section class="trust-bar">
+  <div class="container">
+    <div class="trust-bar-grid">
+      <div class="trust-bar-item">
+        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#2ECC71" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+        <span class="trust-bar-text">محتوى آمن 100%</span>
+        <span class="trust-bar-sub">خالي من الإعلانات</span>
+      </div>
+      <div class="trust-bar-item">
+        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#F39C12" stroke-width="2"><path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"/><line x1="3" y1="6" x2="21" y2="6"/><path d="M16 10a4 4 0 0 1-8 0"/></svg>
+        <span class="trust-bar-text">تعلم ممتع وتفاعلي</span>
+        <span class="trust-bar-sub">بين الواقع والرقمي</span>
+      </div>
+      <div class="trust-bar-item">
+        <svg width="32" height="32" viewBox="0 0 24 24" fill="#F59E0B"><polygon points="12,2 15.09,8.26 22,9.27 17,14.14 18.18,21.02 12,17.77 5.82,21.02 7,14.14 2,9.27 8.91,8.26"/></svg>
+        <span class="trust-bar-text">تطوير المهارات والقيم</span>
+      </div>
+      <div class="trust-bar-item">
+        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#3498DB" stroke-width="2"><line x1="18" y1="20" x2="18" y2="10"/><line x1="12" y1="20" x2="12" y2="4"/><line x1="6" y1="20" x2="6" y2="14"/></svg>
+        <span class="trust-bar-text">متابعة وتقارير دورية</span>
+        <span class="trust-bar-sub">عن تقدم طفلك</span>
+      </div>
+      <div class="trust-bar-item">
+        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#8B5CF6" stroke-width="2"><path d="M3 18v-6a9 9 0 0 1 18 0v6"/><path d="M21 19a2 2 0 0 1-2 2h-1a2 2 0 0 1-2-2v-3a2 2 0 0 1 2-2h3zM3 19a2 2 0 0 0 2 2h1a2 2 0 0 0 2-2v-3a2 2 0 0 0-2-2H3z"/></svg>
+        <span class="trust-bar-text">فريق دعم جاهز</span>
+        <span class="trust-bar-sub">لمساعدتك دائماً</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════ FOOTER ═══════════════ -->
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-col">
+        <h4 class="footer-heading">تواصل معنا</h4>
+        <ul class="footer-contact">
+          <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#2ECC71" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.81.32 1.6.57 2.37a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.77.25 1.56.44 2.37.57A2 2 0 0 1 22 16.92z"/></svg><span>+213 5 123 456 78</span></li>
+          <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#2ECC71" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg><span>contact@ibni.dz</span></li>
+          <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#2ECC71" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg><div><span>الجزائر - الجزائر العاصمة</span><span class="footer-sub">مدارسنا الحضورية</span></div></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4 class="footer-heading">روابط سريعة</h4>
+        <ul class="footer-links"><li><a href="#">عن المشروع</a></li><li><a href="#">الأسئلة الشائعة</a></li><li><a href="#">سياسة الخصوصية</a></li><li><a href="#">شروط الاستخدام</a></li></ul>
+      </div>
+      <div class="footer-col">
+        <h4 class="footer-heading">حمل تطبيقاتنا</h4>
+        <div class="store-buttons">
+          <a href="#" class="store-btn"><svg width="24" height="24" viewBox="0 0 24 24" fill="#FFFFFF"><path d="M3.609 1.814L13.792 12 3.61 22.186a.996.996 0 0 1-.61-.92V2.734a1 1 0 0 1 .609-.92zm10.89 10.893l2.302 2.302-10.937 6.333 8.635-8.635zm3.199-1.4l2.538 1.472a1 1 0 0 1 0 1.728l-2.538 1.47-2.536-2.534 2.536-2.137zM5.864 3.469L16.8 9.802l-2.302 2.302L5.864 3.47z"/></svg><div><span class="store-small">GET IT ON</span><span class="store-big">Google Play</span></div></a>
+          <a href="#" class="store-btn"><svg width="24" height="24" viewBox="0 0 24 24" fill="#FFFFFF"><path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.8-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11z"/></svg><div><span class="store-small">Download on the</span><span class="store-big">App Store</span></div></a>
+        </div>
+      </div>
+      <div class="footer-col">
+        <h4 class="footer-heading">تابعنا على</h4>
+        <div class="social-icons">
+          <a href="#" class="social-circle social-fb" aria-label="فيسبوك"><svg width="20" height="20" viewBox="0 0 24 24" fill="#FFFFFF"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg></a>
+          <a href="#" class="social-circle social-ig" aria-label="انستغرام"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#FFFFFF" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="5"/><circle cx="17.5" cy="6.5" r="1.5" fill="#FFFFFF"/></svg></a>
+          <a href="#" class="social-circle social-yt" aria-label="يوتيوب"><svg width="20" height="20" viewBox="0 0 24 24" fill="#FFFFFF"><path d="M23 7s-.3-2-1.2-2.9C20.7 3 19.5 3 19 3H5c-.5 0-1.7 0-2.8 1.1C1.3 5 1 7 1 7s-.3 2-.3 4v2c0 2 .3 4 .3 4s.3 2 1.2 2.9C3.3 21 4.5 21 5 21h14c.5 0 1.7 0 2.8-1.1.9-.9 1.2-2.9 1.2-2.9s.3-2 .3-4v-2c0-2-.3-4-.3-4zM10 15V9l6 3-6 3z"/></svg></a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span class="footer-url">www.ibni.dz</span>
+      <span class="footer-copy">جميع الحقوق - إبني مسوق محفوظة 2024 &copy;</span>
+      <div class="footer-logo-small"><svg width="30" height="30" viewBox="0 0 36 36" fill="none"><path d="M18 3L3 15V33H13V23H23V33H33V15L18 3Z" fill="#FFFFFF" opacity="0.8"/><polygon points="18,8 15,12 21,12" fill="#F39C12"/></svg></div>
+    </div>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
