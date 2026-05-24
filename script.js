@@ -232,29 +232,36 @@ document.addEventListener('DOMContentLoaded', () => {
     }
   }
 
-  /* ── CTA FORM (index page) ──────────── */
-  const ctaForm = document.getElementById('ctaForm');
-  if (ctaForm) {
-    ctaForm.addEventListener('submit', (e) => {
-      e.preventDefault();
-      const name = document.getElementById('parentName');
-      const phone = document.getElementById('parentPhone');
-      let valid = true;
-      if (!name.value.trim()) {
-        name.classList.add('error');
-        valid = false;
-        setTimeout(() => name.classList.remove('error'), 600);
-      }
-      if (phone.value && !/^0[5-7][0-9]{8}$/.test(phone.value)) {
-        phone.classList.add('error');
-        valid = false;
-        setTimeout(() => phone.classList.remove('error'), 600);
-      }
-      if (valid) {
-        alert('تم التسجيل بنجاح! سنتواصل معك قريباً');
-        ctaForm.reset();
-      }
+  /* ── PARALLAX TILT ON CHARACTER CARDS ───────────── */
+  const tiltCards = document.querySelectorAll('.character-card, .pillar-card');
+  tiltCards.forEach(card => {
+    card.addEventListener('mousemove', (e) => {
+      const rect = card.getBoundingClientRect();
+      const x = e.clientX - rect.left;
+      const y = e.clientY - rect.top;
+      const cx = rect.width / 2;
+      const cy = rect.height / 2;
+      const rx = ((y - cy) / cy) * -4;
+      const ry = ((x - cx) / cx) * 4;
+      card.style.transform = `perspective(800px) rotateX(${rx}deg) rotateY(${ry}deg) translateY(-6px)`;
     });
-  }
+    card.addEventListener('mouseleave', () => {
+      card.style.transform = '';
+    });
+  });
+
+  /* ── MAGNETIC BUTTONS ───────────── */
+  const magneticBtns = document.querySelectorAll('.btn-primary-cta, .btn-join, .nav-cta');
+  magneticBtns.forEach(btn => {
+    btn.addEventListener('mousemove', (e) => {
+      const rect = btn.getBoundingClientRect();
+      const x = e.clientX - rect.left - rect.width / 2;
+      const y = e.clientY - rect.top - rect.height / 2;
+      btn.style.transform = `translate(${x * 0.12}px, ${y * 0.18}px)`;
+    });
+    btn.addEventListener('mouseleave', () => {
+      btn.style.transform = '';
+    });
+  });
 
 });
