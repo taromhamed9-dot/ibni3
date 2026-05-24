@@ -3,28 +3,35 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>إبني - منظومة تعليمية تربوية</title>
+  <title>إبني · منظومة تعليمية تربوية</title>
+  <meta name="description" content="إبني — منظومة تعليمية تربوية متكاملة تجمع بين التطبيقات الذكية، الألعاب الملموسة، والمدارس الافتراضية والحضورية. البديل الذكي لإدمان الهواتف.">
+  <meta name="theme-color" content="#3B82F6">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;800&family=Tajawal:wght@400;500;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
-<!-- ═══════════════ NAVIGATION BAR ═══════════════ -->
+<!-- ═══════════════ NAVIGATION ═══════════════ -->
 <nav class="navbar" id="navbar">
   <div class="nav-container">
     <a href="#" class="nav-logo">
       <div class="logo-icon">
-        <svg width="36" height="36" viewBox="0 0 36 36" fill="none">
-          <path d="M18 3L3 15V33H13V23H23V33H33V15L18 3Z" fill="#3498DB" stroke="#2C3E50" stroke-width="1.5"/>
-          <polygon points="18,8 15,12 21,12" fill="#F39C12"/>
+        <svg width="40" height="40" viewBox="0 0 40 40" fill="none">
+          <defs>
+            <linearGradient id="logoGrad" x1="0" y1="0" x2="1" y2="1">
+              <stop offset="0%" stop-color="#3B82F6"/>
+              <stop offset="100%" stop-color="#8B5CF6"/>
+            </linearGradient>
+          </defs>
+          <path d="M20 4L4 17v19h11V25h10v11h11V17L20 4z" fill="url(#logoGrad)"/>
+          <polygon points="20,9 16,14 24,14" fill="#F59E0B"/>
         </svg>
       </div>
       <div class="logo-text">
         <span class="logo-name">إبني</span>
-        <span class="logo-tagline">نبني عقولا، وتصنع مستقبلا</span>
+        <span class="logo-tagline">نبني عقولاً.. ونصنع مستقبلاً</span>
       </div>
     </a>
 
@@ -33,324 +40,369 @@
       <li><a href="#about">عن إبني</a></li>
       <li><a href="#games">العابنا</a></li>
       <li><a href="#school">المدرسة</a></li>
-      <li><a href="#blog">المدونة التربوية</a></li>
+      <li><a href="#blog">المدونة</a></li>
       <li><a href="#apps">تطبيقاتنا</a></li>
-      <li><a href="#contact">تواصل معنا</a></li>
+      <li><a href="#contact">تواصل</a></li>
     </ul>
 
     <a href="register.html" class="nav-cta">
-      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
       <span>سجل طفلك الآن</span>
     </a>
 
     <button class="hamburger" id="hamburger" aria-label="القائمة">
-      <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#2C3E50" stroke-width="2.5" stroke-linecap="round"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+      <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#0F1B2D" stroke-width="2.4" stroke-linecap="round"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
     </button>
   </div>
 </nav>
 
-<!-- ═══════════════ HERO SECTION ═══════════════ -->
+<!-- ═══════════════ HERO ═══════════════ -->
 <section class="hero" id="hero">
   <div class="hero-decorations">
-    <span class="deco-circle deco-1"></span>
-    <span class="deco-circle deco-2"></span>
-    <span class="deco-circle deco-3"></span>
-    <span class="deco-circle deco-4"></span>
-    <span class="deco-circle deco-5"></span>
-    <span class="deco-circle deco-6"></span>
-    <span class="deco-circle deco-7"></span>
-    <span class="deco-circle deco-8"></span>
+    <span class="deco-blob b1"></span>
+    <span class="deco-blob b2"></span>
+    <span class="deco-blob b3"></span>
+    <span class="deco-blob b4"></span>
+    <span class="deco-dot d1"></span>
+    <span class="deco-dot d2"></span>
+    <span class="deco-dot d3"></span>
+    <span class="deco-dot d4"></span>
+    <span class="deco-dot d5"></span>
   </div>
+
   <div class="container hero-grid">
     <div class="hero-text animate-fadeInRight">
+      <span class="hero-eyebrow"><span class="pulse-dot"></span> منظومة إبني التعليمية</span>
       <h1>
-        <span class="hero-line">البديل الذكي للإدمان الهواتف</span>
-        <span class="hero-line">منظومة تعليمية تربوية</span>
-        <span class="hero-line hero-highlight">تلمسها بين يديك وفي الواقع</span>
+        <span class="hero-line">البديل الذكي</span>
+        <span class="hero-line">لإدمان الهواتف،</span>
+        <span class="hero-line hero-highlight">تلمسها بين يدي طفلك</span>
       </h1>
-      <p class="hero-subtitle">نرافق طفلك (من 5 إلى 10 سنوات) بروح أصيلة وأدوات مستقبلية عبر التطبيقات الألعاب الملموسة والمدارس الافتراضية والحضورية.</p>
-      <div class="hero-buttons animate-fadeInUp delay-1">
+      <p class="hero-subtitle">
+        نرافق طفلك (5 إلى 10 سنوات) برحلة تعليمية أصيلة تجمع بين التطبيقات الذكية، الألعاب الملموسة، والمدارس الحضورية والافتراضية.
+      </p>
+
+      <div class="hero-buttons">
         <a href="register.html" class="btn btn-primary-cta">
-          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4.5 16.5c-1.5 1.38-2 2.5-2 3.5 0 2 2.5 2 4 0 1.5-2 .5-3.5 0-4.5"/><path d="M12 2C6.5 2 2 6 2 10c0 1.5.5 2.8 1 4l9 8 9-8c.5-1.2 1-2.5 1-4 0-4-4.5-8-10-8z" fill="none"/><path d="M15 4.1c2.3.8 4 3 4 5.4"/><path d="M6 12l2 2 4-4"/></svg>
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2C7 2 3 6 3 11c0 5 9 11 9 11s9-6 9-11c0-5-4-9-9-9z"/><path d="M9 11l2 2 4-4"/></svg>
           <div>
             <span class="btn-main-text">ابدأ الرحلة</span>
-            <span class="btn-sub-text">(إنشاء حساب ولي الأمر)</span>
+            <span class="btn-sub-text">إنشاء حساب لطفلك في 6 خطوات</span>
           </div>
         </a>
-        <a href="#" class="btn btn-secondary-cta">
-          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polygon points="10,8 16,12 10,16" fill="currentColor"/></svg>
-          <span>شاهد فيديو تعريفي قصير</span>
+        <a href="#about" class="btn btn-secondary-cta">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polygon points="10,8 16,12 10,16" fill="currentColor" stroke="none"/></svg>
+          <span>شاهد كيف نعمل</span>
         </a>
       </div>
+
       <div class="trust-badges animate-fadeInUp delay-2">
         <div class="trust-badge">
-          <svg width="18" height="18" viewBox="0 0 24 24" fill="#F39C12"><polygon points="12,2 15.09,8.26 22,9.27 17,14.14 18.18,21.02 12,17.77 5.82,21.02 7,14.14 2,9.27 8.91,8.26"/></svg>
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="#F59E0B"><polygon points="12,2 15,8.5 22,9.3 17,14 18.2,21 12,17.8 5.8,21 7,14 2,9.3 9,8.5"/></svg>
           <span>تعلم ممتع وتفاعلي</span>
         </div>
         <div class="trust-badge">
-          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#2ECC71" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><polyline points="9,12 11,14 15,10"/></svg>
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#10B981" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><polyline points="9,12 11,14 15,10"/></svg>
           <span>محتوى آمن وموثوق</span>
         </div>
         <div class="trust-badge">
-          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#3498DB" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/></svg>
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#3B82F6" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/></svg>
           <span>تجربة تعليمية متكاملة</span>
         </div>
       </div>
     </div>
+
     <div class="hero-image animate-fadeInLeft">
-      <img src="img/hero-characters.png" alt="أطفال يتعلمون مع الروبوت دليل" loading="lazy">
-      <span class="floating-dot dot-1"></span>
-      <span class="floating-dot dot-2"></span>
-      <span class="floating-dot dot-3"></span>
+      <div class="hero-image-card">
+        <img src="img/heroes-welcome.png" alt="أبطال إبني يرحبون بك" loading="eager">
+      </div>
+      <span class="float-chip chip-1">
+        <span class="chip-icon">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><polyline points="9,12 11,14 15,10"/></svg>
+        </span>
+        محتوى آمن 100%
+      </span>
+      <span class="float-chip chip-2">
+        <span class="chip-icon">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><polygon points="12,2 15,8.5 22,9.3 17,14 18.2,21 12,17.8 5.8,21 7,14 2,9.3 9,8.5"/></svg>
+        </span>
+        تعلم بمتعة
+      </span>
+      <span class="float-chip chip-3">
+        <span class="chip-icon">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+        </span>
+        مجتمع داعم
+      </span>
     </div>
   </div>
+
   <div class="wave-divider">
     <svg viewBox="0 0 1440 100" preserveAspectRatio="none"><path d="M0,40 C360,100 1080,0 1440,60 L1440,100 L0,100 Z" fill="#FFFFFF"/></svg>
   </div>
 </section>
 
-<!-- ═══════════════ CHARACTERS SECTION ═══════════════ -->
+<!-- ═══════════════ CHARACTERS ═══════════════ -->
 <section class="characters-section" id="about">
   <div class="container">
     <div class="section-header reveal">
-      <svg class="section-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#2ECC71" stroke-width="2"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2z"/><path d="M8 14s1.5 2 4 2 4-2 4-2"/><line x1="9" y1="9" x2="9.01" y2="9"/><line x1="15" y1="9" x2="15.01" y2="9"/></svg>
-      <h2>أبطال منظومة إبني</h2>
-      <svg class="section-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#2ECC71" stroke-width="2"><path d="M6 3v12"/><path d="M18 9a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"/><path d="M6 21a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"/><path d="M18 9a9 9 0 0 1-9 9"/></svg>
-      <div class="section-underline"></div>
+      <span class="section-eyebrow">عائلة إبني</span>
+      <h2>تعرّف على <span class="text-grad">أبطال منظومة إبني</span></h2>
+      <p class="section-subtitle">ثلاث شخصيات أصيلة ترافق طفلك في كل خطوة تعليمية ممتعة وتفاعلية.</p>
     </div>
+
     <div class="characters-grid">
-      <div class="character-card reveal">
+      <article class="character-card c-anas reveal">
         <div class="character-img-wrap">
-          <img src="img/anas.png" alt="أنس - الطفل الذكي المستكشف" loading="lazy" class="character-img float-animation">
+          <img src="img/anas.png" alt="أنس · الطفل الذكي المستكشف" loading="lazy" class="character-img float-animation">
         </div>
         <h3 class="character-name">أنس</h3>
         <p class="character-desc">الطفل الذكي المستكشف</p>
         <div class="character-actions">
-          <a href="#" class="btn-discover">اكتشف أكثر</a>
+          <a href="#" class="btn-discover">
+            اكتشف أكثر
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><line x1="19" y1="12" x2="5" y2="12"/><polyline points="12,19 5,12 12,5"/></svg>
+          </a>
           <button class="btn-audio" aria-label="تشغيل الصوت">
-            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#3498DB" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="11,5 6,9 2,9 2,15 6,15 11,19"/><path d="M19.07 4.93a10 10 0 0 1 0 14.14"/><path d="M15.54 8.46a5 5 0 0 1 0 7.07"/></svg>
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#3B82F6" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="11,5 6,9 2,9 2,15 6,15 11,19"/><path d="M19.07 4.93a10 10 0 0 1 0 14.14"/><path d="M15.54 8.46a5 5 0 0 1 0 7.07"/></svg>
           </button>
         </div>
-      </div>
-      <div class="character-card reveal">
+      </article>
+
+      <article class="character-card c-jouri reveal">
         <div class="character-img-wrap">
-          <img src="img/jouri.png" alt="جوري - الطفلة الذكية المحبة للقراءة" loading="lazy" class="character-img float-animation">
+          <img src="img/jouri.png" alt="جوري · الطفلة الذكية المحبة للقراءة" loading="lazy" class="character-img float-animation">
         </div>
         <h3 class="character-name">جوري</h3>
         <p class="character-desc">الطفلة الذكية المحبة للقراءة</p>
         <div class="character-actions">
-          <a href="#" class="btn-discover">اكتشف أكثر</a>
+          <a href="#" class="btn-discover">
+            اكتشف أكثر
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><line x1="19" y1="12" x2="5" y2="12"/><polyline points="12,19 5,12 12,5"/></svg>
+          </a>
           <button class="btn-audio" aria-label="تشغيل الصوت">
-            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#3498DB" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="11,5 6,9 2,9 2,15 6,15 11,19"/><path d="M19.07 4.93a10 10 0 0 1 0 14.14"/><path d="M15.54 8.46a5 5 0 0 1 0 7.07"/></svg>
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#EC4899" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="11,5 6,9 2,9 2,15 6,15 11,19"/><path d="M19.07 4.93a10 10 0 0 1 0 14.14"/><path d="M15.54 8.46a5 5 0 0 1 0 7.07"/></svg>
           </button>
         </div>
-      </div>
-      <div class="character-card reveal">
+      </article>
+
+      <article class="character-card c-dalil reveal">
         <div class="character-img-wrap">
-          <img src="img/dalil.png" alt="دليل - الدليل التكنولوجي الذكي" loading="lazy" class="character-img float-animation">
+          <img src="img/dalil.png" alt="دليل · الدليل التكنولوجي الذكي" loading="lazy" class="character-img float-animation">
         </div>
         <h3 class="character-name">دليل</h3>
-        <p class="character-desc">الدليل التكنولوجي الذكي يرافقك في مغامرات شيقة</p>
+        <p class="character-desc">الدليل التكنولوجي الذكي</p>
         <div class="character-actions">
-          <a href="#" class="btn-discover">اكتشف أكثر</a>
+          <a href="#" class="btn-discover">
+            اكتشف أكثر
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><line x1="19" y1="12" x2="5" y2="12"/><polyline points="12,19 5,12 12,5"/></svg>
+          </a>
           <button class="btn-audio" aria-label="تشغيل الصوت">
-            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#3498DB" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="11,5 6,9 2,9 2,15 6,15 11,19"/><path d="M19.07 4.93a10 10 0 0 1 0 14.14"/><path d="M15.54 8.46a5 5 0 0 1 0 7.07"/></svg>
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#F59E0B" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="11,5 6,9 2,9 2,15 6,15 11,19"/><path d="M19.07 4.93a10 10 0 0 1 0 14.14"/><path d="M15.54 8.46a5 5 0 0 1 0 7.07"/></svg>
           </button>
         </div>
-      </div>
+      </article>
     </div>
   </div>
 </section>
 
-<!-- ═══════════════ WAVE DIVIDER ═══════════════ -->
-<div class="wave-divider wave-white-to-blue">
-  <svg viewBox="0 0 1440 100" preserveAspectRatio="none"><path d="M0,40 C360,100 1080,0 1440,60 L1440,100 L0,100 Z" fill="#F8FBFF"/></svg>
-</div>
-
-<!-- ═══════════════ PILLARS SECTION ═══════════════ -->
+<!-- ═══════════════ PILLARS ═══════════════ -->
 <section class="pillars-section" id="games">
   <div class="container">
     <div class="section-header reveal">
-      <svg class="section-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#2ECC71" stroke-width="2"><path d="M6 3v12"/><path d="M18 9a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"/><path d="M6 21a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"/><path d="M18 9a9 9 0 0 1-9 9"/></svg>
-      <h2>ركائز منظومة إبني</h2>
-      <svg class="section-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#2ECC71" stroke-width="2"><path d="M6 3v12"/><path d="M18 9a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"/><path d="M6 21a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"/><path d="M18 9a9 9 0 0 1-9 9"/></svg>
-      <div class="section-underline"></div>
+      <span class="section-eyebrow">منظومة متكاملة</span>
+      <h2>أربع ركائز <span class="text-grad">تصنع الفرق</span></h2>
+      <p class="section-subtitle">منظومة شاملة تجمع المحتوى التربوي، المدارس، الألعاب الملموسة والتطبيقات الذكية.</p>
     </div>
+
     <div class="pillars-grid">
-      <!-- Pillar 1 -->
-      <div class="pillar-card reveal">
-        <div class="pillar-icon-wrap" style="background: rgba(243,156,18,0.12)">
-          <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="#F39C12" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 18V5l12-2v13"/><circle cx="6" cy="18" r="3"/><circle cx="18" cy="16" r="3"/></svg>
+      <article class="pillar-card p-content reveal">
+        <div class="pillar-icon-wrap">
+          <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="color: var(--pillar-color);">
+            <path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/>
+            <path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/>
+            <line x1="9" y1="7" x2="16" y2="7"/>
+            <line x1="9" y1="11" x2="14" y2="11"/>
+          </svg>
         </div>
-        <h3 class="pillar-title" style="color:#F39C12">المحتوى التربوي</h3>
-        <p class="pillar-body">مقالات ونصائح تربوية وأفكار عملية لدعم رحلة تربية أطفالك كل يوم.</p>
+        <h3 class="pillar-title">المحتوى التربوي</h3>
+        <p class="pillar-body">مقالات ونصائح تربوية وأفكار عملية تدعم رحلة تربية أطفالك كل يوم.</p>
         <a href="#" class="pillar-link">
           زيارة المدونة
-          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="19" y1="12" x2="5" y2="12"/><polyline points="12,19 5,12 12,5"/></svg>
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><line x1="19" y1="12" x2="5" y2="12"/><polyline points="12,19 5,12 12,5"/></svg>
         </a>
-      </div>
-      <!-- Pillar 2 -->
-      <div class="pillar-card pillar-has-image reveal" id="school">
-        <div class="pillar-image-wrap">
-          <img src="img/school.png" alt="مدرسة إبني" loading="lazy">
+      </article>
+
+      <article class="pillar-card p-school reveal" id="school">
+        <div class="pillar-icon-wrap">
+          <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="color: var(--pillar-color);">
+            <path d="M22 10v6M2 10l10-5 10 5-10 5z"/>
+            <path d="M6 12v5c3 3 9 3 12 0v-5"/>
+          </svg>
         </div>
-        <h3 class="pillar-title" style="color:#2ECC71">مدرسة إبني</h3>
-        <p class="pillar-body">نظام تعليمي مبتكر ومتكامل (أونلاين وعبر مدارسنا الحضورية) يركز على المهارات والقيم والحفظ.</p>
+        <h3 class="pillar-title">مدرسة إبني</h3>
+        <p class="pillar-body">نظام تعليمي مبتكر — أونلاين وعبر مدارسنا الحضورية — يركز على المهارات والقيم والحفظ.</p>
         <a href="#" class="pillar-link">
-          تعرف على المدرسة
-          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="19" y1="12" x2="5" y2="12"/><polyline points="12,19 5,12 12,5"/></svg>
+          تعرّف على المدرسة
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><line x1="19" y1="12" x2="5" y2="12"/><polyline points="12,19 5,12 12,5"/></svg>
         </a>
-      </div>
-      <!-- Pillar 3 -->
-      <div class="pillar-card pillar-has-image reveal">
-        <div class="pillar-image-wrap">
-          <img src="img/toys.png" alt="الألعاب الفيزيائية والملموسة" loading="lazy">
+      </article>
+
+      <article class="pillar-card p-toys reveal">
+        <div class="pillar-icon-wrap">
+          <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="color: var(--pillar-color);">
+            <rect x="3" y="3" width="8" height="8" rx="1.5"/>
+            <circle cx="17" cy="7" r="4"/>
+            <path d="M3 17l4-4 4 4-4 4z"/>
+            <rect x="13" y="13" width="8" height="8" rx="1.5"/>
+          </svg>
         </div>
-        <h3 class="pillar-title" style="color:#F39C12">الألعاب الفيزيائية والملموسة</h3>
-        <p class="pillar-body">ألعاب خشبية وحركية صممت خصيصاً لتنمية التركيز وتنمية الذكاء بعيداً عن الشاشات.</p>
+        <h3 class="pillar-title">ألعاب فيزيائية ملموسة</h3>
+        <p class="pillar-body">ألعاب خشبية وحركية صُممت خصيصاً لتنمية التركيز والذكاء بعيداً عن الشاشات.</p>
         <a href="#" class="pillar-link">
           اكتشف الألعاب
-          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="19" y1="12" x2="5" y2="12"/><polyline points="12,19 5,12 12,5"/></svg>
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><line x1="19" y1="12" x2="5" y2="12"/><polyline points="12,19 5,12 12,5"/></svg>
         </a>
-      </div>
-      <!-- Pillar 4 -->
-      <div class="pillar-card pillar-has-image reveal" id="apps">
-        <div class="pillar-image-wrap">
-          <img src="img/apps.png" alt="تطبيقاتنا الذكية" loading="lazy">
+      </article>
+
+      <article class="pillar-card p-apps reveal" id="apps">
+        <div class="pillar-icon-wrap">
+          <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="color: var(--pillar-color);">
+            <rect x="5" y="2" width="14" height="20" rx="3"/>
+            <line x1="12" y1="18" x2="12.01" y2="18"/>
+            <path d="M9 7h6"/>
+            <path d="M10 11h4"/>
+          </svg>
         </div>
-        <h3 class="pillar-title" style="color:#3498DB">تطبيقاتنا الذكية</h3>
-        <p class="pillar-body">تطبيقات آمنة وخالية من الإعلانات. تحول اللعب على الهاتف إلى رحلة تفاعلية لتنمية القيم والمهارات.</p>
-        <a href="#" class="pillar-link">
+        <h3 class="pillar-title">تطبيقاتنا الذكية</h3>
+        <p class="pillar-body">تطبيقات آمنة وخالية من الإعلانات تحوّل وقت الشاشة إلى رحلة تنمي القيم والمهارات.</p>
+        <a href="#apps" class="pillar-link">
           عرض التطبيقات
-          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="19" y1="12" x2="5" y2="12"/><polyline points="12,19 5,12 12,5"/></svg>
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><line x1="19" y1="12" x2="5" y2="12"/><polyline points="12,19 5,12 12,5"/></svg>
         </a>
-      </div>
+      </article>
     </div>
   </div>
 </section>
 
-<!-- ═══════════════ WAVE DIVIDER ═══════════════ -->
-<div class="wave-divider wave-blue-to-white">
-  <svg viewBox="0 0 1440 100" preserveAspectRatio="none"><path d="M0,40 C360,100 1080,0 1440,60 L1440,100 L0,100 Z" fill="#FFFFFF"/></svg>
-</div>
-
-<!-- ═══════════════ COMPARISON SECTION ═══════════════ -->
+<!-- ═══════════════ COMPARISON ═══════════════ -->
 <section class="comparison-section">
   <div class="container">
     <div class="section-header reveal">
-      <svg class="section-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#F39C12" stroke-width="2"><polygon points="12,2 15,8.5 22,9.3 17,14 18.2,21 12,17.8 5.8,21 7,14 2,9.3 9,8.5"/></svg>
-      <h2>كيف نغير حياة طفلك؟</h2>
-      <svg class="section-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#F39C12" stroke-width="2"><polygon points="12,2 15,8.5 22,9.3 17,14 18.2,21 12,17.8 5.8,21 7,14 2,9.3 9,8.5"/></svg>
-      <div class="section-underline"></div>
+      <span class="section-eyebrow">الفرق الذي نصنعه</span>
+      <h2>كيف <span class="text-grad">نغيّر حياة طفلك؟</span></h2>
+      <p class="section-subtitle">قبل وبعد إبني — فرق ملموس في تجربة طفلك وتطوّره.</p>
     </div>
+
     <div class="comparison-grid reveal">
-      <!-- WITH IBNI (left in RTL = visually right) -->
+      <!-- WITH IBNI -->
       <div class="comparison-col comparison-after">
-        <div class="comparison-header comparison-header-green">مع إبني</div>
+        <div class="comparison-header comparison-header-green">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><polyline points="20,6 9,17 4,12"/></svg>
+          مع إبني
+        </div>
         <div class="comparison-img-wrap">
-          <img src="img/happy-child.png" alt="طفل سعيد مع إبني" loading="lazy">
+          <img src="img/heroes-study.png" alt="أبطال إبني يتعلمون معاً" loading="lazy">
         </div>
         <ul class="comparison-list">
-          <li><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#2ECC71" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20,6 9,17 4,12"/></svg><span>تطبيقات هادفة وآمنة</span></li>
-          <li><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#2ECC71" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20,6 9,17 4,12"/></svg><span>ألعاب تربوية تفاعلية</span></li>
-          <li><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#2ECC71" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20,6 9,17 4,12"/></svg><span>ذكاء متقد قيم أصيلة</span></li>
-          <li><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#2ECC71" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20,6 9,17 4,12"/></svg><span>صحة بدنية ونفسية ممتازة</span></li>
+          <li><span class="icon-bubble"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.8" stroke-linecap="round" stroke-linejoin="round"><polyline points="20,6 9,17 4,12"/></svg></span><span>تطبيقات هادفة وآمنة</span></li>
+          <li><span class="icon-bubble"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.8" stroke-linecap="round" stroke-linejoin="round"><polyline points="20,6 9,17 4,12"/></svg></span><span>ألعاب تربوية تفاعلية</span></li>
+          <li><span class="icon-bubble"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.8" stroke-linecap="round" stroke-linejoin="round"><polyline points="20,6 9,17 4,12"/></svg></span><span>ذكاء متّقد وقيم أصيلة</span></li>
+          <li><span class="icon-bubble"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.8" stroke-linecap="round" stroke-linejoin="round"><polyline points="20,6 9,17 4,12"/></svg></span><span>صحة بدنية ونفسية متوازنة</span></li>
         </ul>
       </div>
+
       <!-- CENTER LOGO -->
       <div class="comparison-center">
         <div class="comparison-logo pulse-animation">
-          <svg width="80" height="80" viewBox="0 0 80 80" fill="none">
-            <circle cx="40" cy="40" r="38" fill="#F0F8FF" stroke="#3498DB" stroke-width="2"/>
-            <path d="M40 15L20 30V55H32V42H48V55H60V30L40 15Z" fill="#3498DB"/>
-            <polygon points="40,20 35,27 45,27" fill="#F39C12"/>
-            <text x="40" y="72" text-anchor="middle" fill="#2C3E50" font-family="Cairo" font-size="10" font-weight="700">إبني</text>
+          <svg width="76" height="76" viewBox="0 0 80 80" fill="none">
+            <defs>
+              <linearGradient id="cmpLogoGrad" x1="0" y1="0" x2="1" y2="1">
+                <stop offset="0%" stop-color="#3B82F6"/>
+                <stop offset="100%" stop-color="#8B5CF6"/>
+              </linearGradient>
+            </defs>
+            <path d="M40 12L18 30v34h12V46h20v18h12V30L40 12z" fill="url(#cmpLogoGrad)"/>
+            <polygon points="40,18 33,27 47,27" fill="#F59E0B"/>
           </svg>
         </div>
       </div>
-      <!-- BEFORE IBNI -->
+
+      <!-- BEFORE IBNI (SVG illustration — no duplicate child image) -->
       <div class="comparison-col comparison-before">
-        <div class="comparison-header comparison-header-gray">قبل إبني</div>
+        <div class="comparison-header comparison-header-gray">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+          قبل إبني
+        </div>
         <div class="comparison-img-wrap">
-          <img src="img/sad-child.png" alt="طفل قبل إبني" loading="lazy" class="grayscale-img">
+          <svg class="comparison-svg" width="220" height="200" viewBox="0 0 220 200" fill="none" aria-hidden="true">
+            <defs>
+              <linearGradient id="dimGrad" x1="0" y1="0" x2="1" y2="1">
+                <stop offset="0%" stop-color="#CBD5E1"/>
+                <stop offset="100%" stop-color="#94A3B8"/>
+              </linearGradient>
+              <linearGradient id="screenGrad" x1="0" y1="0" x2="1" y2="1">
+                <stop offset="0%" stop-color="#475569"/>
+                <stop offset="100%" stop-color="#1E293B"/>
+              </linearGradient>
+            </defs>
+            <rect x="40" y="60" width="140" height="90" rx="14" fill="url(#screenGrad)"/>
+            <rect x="50" y="70" width="120" height="70" rx="6" fill="#0F172A"/>
+            <circle cx="80" cy="100" r="8" fill="#475569"/>
+            <rect x="98" y="92" width="60" height="6" rx="3" fill="#475569"/>
+            <rect x="98" y="104" width="40" height="6" rx="3" fill="#334155"/>
+            <circle cx="110" cy="40" r="22" fill="url(#dimGrad)"/>
+            <path d="M100 38 q4 6 8 0" stroke="#1E293B" stroke-width="2.5" stroke-linecap="round" fill="none"/>
+            <path d="M112 38 q4 6 8 0" stroke="#1E293B" stroke-width="2.5" stroke-linecap="round" fill="none"/>
+            <path d="M104 52 q6 -6 12 0" stroke="#1E293B" stroke-width="2.5" stroke-linecap="round" fill="none"/>
+            <path d="M102 44 q-1 4 1 6 q2 -2 1 -6 z" fill="#60A5FA"/>
+            <path d="M70 170 q40 -10 80 0" stroke="#94A3B8" stroke-width="3" stroke-linecap="round" fill="none" opacity="0.6"/>
+          </svg>
         </div>
         <ul class="comparison-list">
-          <li><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#E74C3C" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg><span>شاشات بلا هدف</span></li>
-          <li><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#E74C3C" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg><span>ضعف التركيز</span></li>
-          <li><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#E74C3C" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg><span>عزلة وضعف تواصل</span></li>
-          <li><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#E74C3C" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg><span>ملل وتشتت</span></li>
+          <li><span class="icon-bubble"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.8" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg></span><span>شاشات بلا هدف</span></li>
+          <li><span class="icon-bubble"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.8" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg></span><span>ضعف التركيز</span></li>
+          <li><span class="icon-bubble"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.8" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg></span><span>عزلة وضعف تواصل</span></li>
+          <li><span class="icon-bubble"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.8" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg></span><span>ملل وتشتّت</span></li>
         </ul>
       </div>
     </div>
   </div>
 </section>
 
-<!-- ═══════════════ WAVE DIVIDER ═══════════════ -->
-<div class="wave-divider">
-  <svg viewBox="0 0 1440 100" preserveAspectRatio="none"><path d="M0,60 C480,0 960,100 1440,40 L1440,100 L0,100 Z" fill="#EBF5FB"/></svg>
-</div>
-
-<!-- ═══════════════ REGISTRATION CTA SECTION ═══════════════ -->
-<section class="cta-section" id="contact">
+<!-- ═══════════════ JOIN BANNER (replaces the old form card) ═══════════════ -->
+<section class="join-banner-section" id="contact">
   <div class="container">
-    <div class="cta-wrapper reveal">
-      <h2 class="cta-title">انضم إلى عائلة إبني اليوم</h2>
-      <p class="cta-subtitle">واحصل على استشارة تربوية مجانية لطفلك</p>
-      <div class="cta-grid">
-        <!-- Left Badge -->
-        <div class="cta-badge">
-          <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="#2ECC71" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/><circle cx="12" cy="16" r="1"/></svg>
-          <span class="cta-badge-title">بياناتك آمنة</span>
-          <span class="cta-badge-sub">نحافظ على خصوصيتك</span>
+    <div class="join-banner reveal">
+      <div class="join-content">
+        <span class="join-eyebrow">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><polygon points="12,2 15,8.5 22,9.3 17,14 18.2,21 12,17.8 5.8,21 7,14 2,9.3 9,8.5"/></svg>
+          انضم اليوم
+        </span>
+        <h2 class="join-title">انضم إلى عائلة إبني، واصنع لطفلك رحلة تشبهه.</h2>
+        <p class="join-subtitle">
+          ست خطوات بسيطة تكفي لتجهيز ملف بطلنا الصغير، والحصول على هدية ترحيبية واستشارة تربوية مجانية لطفلك.
+        </p>
+        <div class="join-features">
+          <span class="join-feature">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><polyline points="9,12 11,14 15,10"/></svg>
+            بياناتك آمنة
+          </span>
+          <span class="join-feature">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="3"/><path d="M9 11l2 2 4-4"/></svg>
+            استشارة تربوية مجانية
+          </span>
+          <span class="join-feature">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12,6 12,12 16,14"/></svg>
+            أقل من 3 دقائق
+          </span>
         </div>
-        <!-- Center Form -->
-        <form class="cta-form" id="ctaForm">
-          <div class="form-group">
-            <label for="parentName">اسم ولي الأمر</label>
-            <div class="input-wrap">
-              <svg class="input-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#95A5A6" stroke-width="2"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
-              <input type="text" id="parentName" placeholder="اكتب اسمك" required>
-            </div>
-          </div>
-          <div class="form-group">
-            <label for="parentPhone">رقم الهاتف</label>
-            <div class="input-wrap">
-              <svg class="input-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#95A5A6" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
-              <input type="tel" id="parentPhone" placeholder="07 XX XX XX XX" pattern="0[5-7][0-9]{8}">
-            </div>
-          </div>
-          <div class="form-group">
-            <label for="wilaya">اختر الولاية</label>
-            <div class="input-wrap">
-              <svg class="input-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#95A5A6" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
-              <select id="wilaya">
-                <option value="">اختر الولاية</option>
-                <option value="01">01 - Adrar</option><option value="02">02 - Chlef</option><option value="03">03 - Laghouat</option><option value="04">04 - Oum El Bouaghi</option><option value="05">05 - Batna</option><option value="06">06 - Béjaïa</option><option value="07">07 - Biskra</option><option value="08">08 - Béchar</option><option value="09">09 - Blida</option><option value="10">10 - Bouira</option><option value="11">11 - Tamanrasset</option><option value="12">12 - Tébessa</option><option value="13">13 - Tlemcen</option><option value="14">14 - Tiaret</option><option value="15">15 - Tizi Ouzou</option><option value="16">16 - Algiers</option><option value="17">17 - Djelfa</option><option value="18">18 - Jijel</option><option value="19">19 - Sétif</option><option value="20">20 - Saïda</option><option value="21">21 - Skikda</option><option value="22">22 - Sidi Bel Abbès</option><option value="23">23 - Annaba</option><option value="24">24 - Guelma</option><option value="25">25 - Constantine</option><option value="26">26 - Médéa</option><option value="27">27 - Mostaganem</option><option value="28">28 - M'Sila</option><option value="29">29 - Mascara</option><option value="30">30 - Ouargla</option><option value="31">31 - Oran</option><option value="32">32 - El Bayadh</option><option value="33">33 - Illizi</option><option value="34">34 - Bordj Bou Arréridj</option><option value="35">35 - Boumerdès</option><option value="36">36 - El Tarf</option><option value="37">37 - Tindouf</option><option value="38">38 - Tissemsilt</option><option value="39">39 - El Oued</option><option value="40">40 - Khenchela</option><option value="41">41 - Souk Ahras</option><option value="42">42 - Tipaza</option><option value="43">43 - Mila</option><option value="44">44 - Aïn Defla</option><option value="45">45 - Naâma</option><option value="46">46 - Aïn Témouchent</option><option value="47">47 - Ghardaïa</option><option value="48">48 - Relizane</option><option value="49">49 - Timimoun</option><option value="50">50 - Bordj Badji Mokhtar</option><option value="51">51 - Ouled Djellal</option><option value="52">52 - Béni Abbès</option><option value="53">53 - In Salah</option><option value="54">54 - In Guezzam</option><option value="55">55 - Touggourt</option><option value="56">56 - Djanet</option><option value="57">57 - El M'Ghair</option><option value="58">58 - El Meniaa</option>
-              </select>
-            </div>
-          </div>
-          <div class="form-group">
-            <label for="childAge">عمر الطفل</label>
-            <div class="input-wrap">
-              <select id="childAge">
-                <option value="">اختر العمر</option>
-                <option value="5">5 سنوات</option>
-                <option value="6">6 سنوات</option>
-                <option value="7">7 سنوات</option>
-                <option value="8">8 سنوات</option>
-                <option value="9">9 سنوات</option>
-                <option value="10">10 سنوات</option>
-              </select>
-            </div>
-          </div>
-          <button type="submit" class="btn-submit">احجز مقعد طفلك الآن</button>
-        </form>
-        <!-- Right Badge -->
-        <div class="cta-badge">
-          <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="#F39C12" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20 12v6a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2v-6"/><polyline points="12,3 12,15"/><path d="M8 8l4-5 4 5"/><rect x="4" y="12" width="16" height="2" rx="1"/></svg>
-          <span class="cta-badge-title">استشارة تربوية مجانية</span>
-          <span class="cta-badge-sub">لطفلك</span>
-        </div>
+      </div>
+      <div class="join-cta-wrap">
+        <a href="register.html" class="btn-join">
+          <span>سجّل طفلك الآن</span>
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><line x1="19" y1="12" x2="5" y2="12"/><polyline points="12,19 5,12 12,5"/></svg>
+        </a>
       </div>
     </div>
   </div>
@@ -361,27 +413,37 @@
   <div class="container">
     <div class="trust-bar-grid">
       <div class="trust-bar-item reveal">
-        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#2ECC71" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+        <span class="trust-icon-wrap" style="background: var(--leaf-soft); color: var(--leaf-deep);">
+          <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+        </span>
         <span class="trust-bar-text">محتوى آمن 100%</span>
-        <span class="trust-bar-sub">خالي من الإعلانات</span>
+        <span class="trust-bar-sub">خالٍ من الإعلانات</span>
       </div>
       <div class="trust-bar-item reveal">
-        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#F39C12" stroke-width="2"><path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"/><line x1="3" y1="6" x2="21" y2="6"/><path d="M16 10a4 4 0 0 1-8 0"/></svg>
+        <span class="trust-icon-wrap" style="background: var(--accent-soft); color: var(--accent-deep);">
+          <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"/><line x1="3" y1="6" x2="21" y2="6"/><path d="M16 10a4 4 0 0 1-8 0"/></svg>
+        </span>
         <span class="trust-bar-text">تعلم ممتع وتفاعلي</span>
         <span class="trust-bar-sub">بين الواقع والرقمي</span>
       </div>
       <div class="trust-bar-item reveal">
-        <svg width="32" height="32" viewBox="0 0 24 24" fill="#F59E0B"><polygon points="12,2 15.09,8.26 22,9.27 17,14.14 18.18,21.02 12,17.77 5.82,21.02 7,14.14 2,9.27 8.91,8.26"/></svg>
+        <span class="trust-icon-wrap" style="background: var(--rose-soft); color: var(--rose);">
+          <svg width="26" height="26" viewBox="0 0 24 24" fill="currentColor"><polygon points="12,2 15,8.5 22,9.3 17,14 18.2,21 12,17.8 5.8,21 7,14 2,9.3 9,8.5"/></svg>
+        </span>
         <span class="trust-bar-text">تطوير المهارات والقيم</span>
-        <span class="trust-bar-sub"></span>
+        <span class="trust-bar-sub">جذور أصيلة، أدوات حديثة</span>
       </div>
       <div class="trust-bar-item reveal">
-        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#3498DB" stroke-width="2"><line x1="18" y1="20" x2="18" y2="10"/><line x1="12" y1="20" x2="12" y2="4"/><line x1="6" y1="20" x2="6" y2="14"/></svg>
-        <span class="trust-bar-text">متابعة وتقارير دورية</span>
-        <span class="trust-bar-sub">عن تقدم طفلك</span>
+        <span class="trust-icon-wrap" style="background: var(--brand-soft); color: var(--brand-deep);">
+          <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="20" x2="18" y2="10"/><line x1="12" y1="20" x2="12" y2="4"/><line x1="6" y1="20" x2="6" y2="14"/></svg>
+        </span>
+        <span class="trust-bar-text">متابعة وتقارير</span>
+        <span class="trust-bar-sub">عن تقدّم طفلك</span>
       </div>
       <div class="trust-bar-item reveal">
-        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#8B5CF6" stroke-width="2"><path d="M3 18v-6a9 9 0 0 1 18 0v6"/><path d="M21 19a2 2 0 0 1-2 2h-1a2 2 0 0 1-2-2v-3a2 2 0 0 1 2-2h3zM3 19a2 2 0 0 0 2 2h1a2 2 0 0 0 2-2v-3a2 2 0 0 0-2-2H3z"/></svg>
+        <span class="trust-icon-wrap" style="background: var(--plum-soft); color: var(--plum-deep);">
+          <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 18v-6a9 9 0 0 1 18 0v6"/><path d="M21 19a2 2 0 0 1-2 2h-1a2 2 0 0 1-2-2v-3a2 2 0 0 1 2-2h3zM3 19a2 2 0 0 0 2 2h1a2 2 0 0 0 2-2v-3a2 2 0 0 0-2-2H3z"/></svg>
+        </span>
         <span class="trust-bar-text">فريق دعم جاهز</span>
         <span class="trust-bar-sub">لمساعدتك دائماً</span>
       </div>
@@ -393,28 +455,26 @@
 <footer class="site-footer">
   <div class="container">
     <div class="footer-grid">
-      <!-- Column 1 -->
       <div class="footer-col">
         <h4 class="footer-heading">تواصل معنا</h4>
         <ul class="footer-contact">
           <li>
-            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#2ECC71" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.81.32 1.6.57 2.37a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.77.25 1.56.44 2.37.57A2 2 0 0 1 22 16.92z"/></svg>
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#10B981" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.81.32 1.6.57 2.37a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.77.25 1.56.44 2.37.57A2 2 0 0 1 22 16.92z"/></svg>
             <span>+213 5 123 456 78</span>
           </li>
           <li>
-            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#2ECC71" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#10B981" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
             <span>contact@ibni.dz</span>
           </li>
           <li>
-            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#2ECC71" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#10B981" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
             <div>
-              <span>الجزائر - الجزائر العاصمة</span>
+              <span>الجزائر · الجزائر العاصمة</span>
               <span class="footer-sub">مدارسنا الحضورية</span>
             </div>
           </li>
         </ul>
       </div>
-      <!-- Column 2 -->
       <div class="footer-col">
         <h4 class="footer-heading">روابط سريعة</h4>
         <ul class="footer-links">
@@ -424,19 +484,18 @@
           <li><a href="#">شروط الاستخدام</a></li>
         </ul>
       </div>
-      <!-- Column 3 -->
       <div class="footer-col">
-        <h4 class="footer-heading">حمل تطبيقاتنا</h4>
+        <h4 class="footer-heading">حمّل تطبيقاتنا</h4>
         <div class="store-buttons">
           <a href="#" class="store-btn">
-            <svg width="24" height="24" viewBox="0 0 24 24" fill="#FFFFFF"><path d="M3.609 1.814L13.792 12 3.61 22.186a.996.996 0 0 1-.61-.92V2.734a1 1 0 0 1 .609-.92zm10.89 10.893l2.302 2.302-10.937 6.333 8.635-8.635zm3.199-1.4l2.538 1.472a1 1 0 0 1 0 1.728l-2.538 1.47-2.536-2.534 2.536-2.137zM5.864 3.469L16.8 9.802l-2.302 2.302L5.864 3.47z"/></svg>
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="#FFFFFF"><path d="M3.609 1.814L13.792 12 3.61 22.186a.996.996 0 0 1-.61-.92V2.734a1 1 0 0 1 .609-.92zm10.89 10.893l2.302 2.302-10.937 6.333 8.635-8.635zm3.199-1.4l2.538 1.472a1 1 0 0 1 0 1.728l-2.538 1.47-2.536-2.534 2.536-2.137zM5.864 3.469L16.8 9.802l-2.302 2.302L5.864 3.47z"/></svg>
             <div>
               <span class="store-small">GET IT ON</span>
               <span class="store-big">Google Play</span>
             </div>
           </a>
           <a href="#" class="store-btn">
-            <svg width="24" height="24" viewBox="0 0 24 24" fill="#FFFFFF"><path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.8-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11z"/></svg>
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="#FFFFFF"><path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.8-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11z"/></svg>
             <div>
               <span class="store-small">Download on the</span>
               <span class="store-big">App Store</span>
@@ -444,9 +503,8 @@
           </a>
         </div>
       </div>
-      <!-- Column 4 -->
       <div class="footer-col">
-        <h4 class="footer-heading">تابعنا على</h4>
+        <h4 class="footer-heading">تابعنا</h4>
         <div class="social-icons">
           <a href="#" class="social-circle social-fb" aria-label="فيسبوك">
             <svg width="20" height="20" viewBox="0 0 24 24" fill="#FFFFFF"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
@@ -462,11 +520,11 @@
     </div>
     <div class="footer-bottom">
       <span class="footer-url">www.ibni.dz</span>
-      <span class="footer-copy">جميع الحقوق - إبني مسوق محفوظة 2024 &copy;</span>
+      <span class="footer-copy">جميع الحقوق محفوظة · إبني &copy; 2024</span>
       <div class="footer-logo-small">
-        <svg width="30" height="30" viewBox="0 0 36 36" fill="none">
-          <path d="M18 3L3 15V33H13V23H23V33H33V15L18 3Z" fill="#FFFFFF" opacity="0.8"/>
-          <polygon points="18,8 15,12 21,12" fill="#F39C12"/>
+        <svg width="32" height="32" viewBox="0 0 36 36" fill="none">
+          <path d="M18 3L3 15V33H13V23H23V33H33V15L18 3Z" fill="#FFFFFF" opacity="0.7"/>
+          <polygon points="18,8 15,12 21,12" fill="#F59E0B"/>
         </svg>
       </div>
     </div>
